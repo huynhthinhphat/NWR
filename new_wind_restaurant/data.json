@@ -7,6 +7,12 @@
             "typeAccount": "nvienquen"
         },
         {
+            "id": "48e5",
+            "user": "nhanvien1",
+            "password": "1",
+            "typeAccount": "admin"
+        },
+        {
             "id": "4fcf",
             "user": "phat",
             "password": "1",

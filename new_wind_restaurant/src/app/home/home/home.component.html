@@ -1,7 +1,13 @@
+<p>Trang chủ</p>
 <div>
-    <span><a routerLink="login" routerLinkActive="active">Login</a></span>
+    <img src="\assets\image\anh_nen.jpg" alt="Chưa load">
 </div>
+
 <div>
-    <span><a routerLink="register" routerLinkActive="active">Register</a></span>
+    <button type="submit" *ngIf="loginToShow">{{displayaccount}}</button>
+</div>
+
+<div>
+    <span><a routerLink="/login" routerLinkActive="active">Login</a></span>
 </div>
 <router-outlet></router-outlet>

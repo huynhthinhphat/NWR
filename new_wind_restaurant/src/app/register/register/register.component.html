@@ -1,3 +1,4 @@
+<p>Register</p>
 <form (ngSubmit)="register(account)" #loginForm="ngForm">
     <input type="text" placeholder="User" name="user" #user="ngModel" [(ngModel)]="account.user">
     <input type="text" placeholder="Password" name="password" #password="ngModel" [(ngModel)]="account.password">
@@ -8,7 +9,6 @@
 </form>
 
 <div>
-    <span><a routerLink="/login" routerLinkActive="active">Login</a></span>
-    <span><a routerLink="" routerLinkActive="active">Go back</a></span>
+    <span><a routerLink="/login" routerLinkActive="active">Go back Login</a></span>
 </div>
 <router-outlet></router-outlet>

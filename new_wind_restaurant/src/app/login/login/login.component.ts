@@ -12,6 +12,7 @@ export class LoginComponent {
   account: Account = <Account>{};
   isButtonAdmin: boolean = true;
   isButtonNV: boolean = true;
+
   constructor(private service: DataService, private router: Router) { }
   adminButton() {
     this.isButtonAdmin = false; // Kích hoạt nút
@@ -23,7 +24,7 @@ export class LoginComponent {
     this.isButtonNV = false;
   }
 
-  disableButton(){
+  disableButton() {
     this.isButtonAdmin = true; // Vô hiệu hóa nút
     this.isButtonNV = true;
   }
@@ -43,9 +44,8 @@ export class LoginComponent {
             return;
           }
         });
-        console.log(dem)
         if (dem == 1) {
-          this.router.navigate(['login']);
+          this.router.navigate(['home'], { queryParams: { userAccount: account.user } });
         } else {
           console.log("Tài khoản hoặc mật khẩu sai");
           this.disableButton();
