@@ -1,0 +1,22 @@
+{
+    "account": [
+        {
+            "id": "07a5",
+            "user": "nhanvien",
+            "password": "1",
+            "typeAccount": "nvienquen"
+        },
+        {
+            "id": "4fcf",
+            "user": "phat",
+            "password": "1",
+            "typeAccount": "admin"
+        },
+        {
+            "id": "f6fe",
+            "user": "admin",
+            "password": "1",
+            "typeAccount": "admin"
+        }
+    ]
+}

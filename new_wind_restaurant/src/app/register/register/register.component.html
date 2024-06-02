@@ -1,0 +1,14 @@
+<form (ngSubmit)="register(account)" #loginForm="ngForm">
+    <input type="text" placeholder="User" name="user" #user="ngModel" [(ngModel)]="account.user">
+    <input type="text" placeholder="Password" name="password" #password="ngModel" [(ngModel)]="account.password">
+    <select name="type" #type="ngModel" [(ngModel)]="account.typeAccount">
+        <option *ngFor="let type of typeAccount" [ngValue]="type">{{type}}</option>
+    </select>
+    <button type="submit">Register</button>
+</form>
+
+<div>
+    <span><a routerLink="/login" routerLinkActive="active">Login</a></span>
+    <span><a routerLink="" routerLinkActive="active">Go back</a></span>
+</div>
+<router-outlet></router-outlet>
