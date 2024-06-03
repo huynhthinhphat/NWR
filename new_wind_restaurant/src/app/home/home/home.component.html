@@ -1,13 +1,20 @@
-<p>Trang chủ</p>
-<div>
-    <img src="\assets\image\anh_nen.jpg" alt="Chưa load">
-</div>
+<html lang="en">
 
-<div>
-    <button type="submit" *ngIf="loginToShow">{{displayaccount}}</button>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-<div>
-    <span><a routerLink="/login" routerLinkActive="active">Login</a></span>
-</div>
-<router-outlet></router-outlet>
+<body>
+    <div>
+        <button type="submit" *ngIf="loginToShow">{{displayaccount}}</button>
+    </div>
+
+    <div>
+        <span><a routerLink="/login" routerLinkActive="active">Login</a></span>
+    </div>
+    <router-outlet></router-outlet>
+</body>
+
+</html>

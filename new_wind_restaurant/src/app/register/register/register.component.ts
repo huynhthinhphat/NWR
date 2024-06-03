@@ -32,7 +32,7 @@ export class RegisterComponent {
           //thêm
           this.service.pushToJson(account).subscribe(res2 => {
             this.service.pushToSQL().subscribe(res3 => {
-              this.router.navigate(['']);
+              // this.router.navigate(['']);
               confirm("Tạo thành công");
             });
           });

@@ -1,25 +1,14 @@
-<html lang="en">
+<p>Login</p>
+<form (ngSubmit)="login(account)" #loginForm="ngForm">
+    <input type="text" placeholder="User" name="user" #user="ngModel" [(ngModel)]="account.user" required>
+    <input type="text" placeholder="Password" name="password" #password="ngModel" [(ngModel)]="account.password"
+        required>
+    <button type="submit">Login</button>
+</form>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-
-<body>
-    <p>Login</p>
-    <form (ngSubmit)="login(account)" #loginForm="ngForm">
-        <input type="text" placeholder="User" name="user" #user="ngModel" [(ngModel)]="account.user" required>
-        <input type="text" placeholder="Password" name="password" #password="ngModel" [(ngModel)]="account.password"
-            required>
-        <button type="submit">Login</button>
-    </form>
-
-    <div>
-        <button [disabled]="isButtonAdmin">Admin</button>
-        <button [disabled]="isButtonNV">Nhân viên quèn</button>
-    </div>
-    <router-outlet></router-outlet>
-</body>
-
-</html>
+<div>
+    <button [disabled]="isButtonAdmin">Admin</button>
+    <button [disabled]="isButtonNV">Nhân viên quèn</button>
+    <a routerLink="/register" routerLinkActive="active">Register</a>
+</div>
+<router-outlet></router-outlet>

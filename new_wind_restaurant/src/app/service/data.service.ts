@@ -7,11 +7,8 @@ import { Account } from '../model/account';
   providedIn: 'root'
 })
 export class DataService {
-  private SQL_TO_JSON = "http://localhost/project/new_wind_restaurant/sql_to_json.php";
-  private JSON_TO_SQL = "http://localhost/project/new_wind_restaurant/json_to_sql.php";
+  private API = "http://localhost/project/new_wind_restaurant/api.php";
   private DATA_JSON = "http://localhost:3000";
-
-  accountToDisplay: string = "phat";
 
   private httpOptions = {
     headers: new HttpHeaders({
@@ -26,7 +23,7 @@ export class DataService {
   }
 
   getDataFromSQL(): Observable<any> {
-    return this.http.get<any>(this.SQL_TO_JSON);
+    return this.http.get<any>(this.API + '?action=sql_to_json');
   }
 
   pushToJson(account: any): Observable<any> {
@@ -35,10 +32,6 @@ export class DataService {
   }
 
   pushToSQL(): Observable<any> {
-    return this.http.get<any>(this.JSON_TO_SQL);
-  }
-
-  sendAccount() {
-    return this.accountToDisplay;
+    return this.http.get<any>(this.API + '?action=json_to_sql');
   }
 }
