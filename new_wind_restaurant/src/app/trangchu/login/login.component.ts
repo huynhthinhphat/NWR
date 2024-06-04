@@ -45,9 +45,9 @@ export class LoginComponent {
           }
         });
         if (dem == 1) {
-          this.router.navigate(['home'], { queryParams: { userAccount: account.user } });
+          this.router.navigate(['/trangchu/home'], { queryParams: { userAccount: account.user } });
         } else {
-          console.log("Tài khoản hoặc mật khẩu sai");
+          confirm("Tài khoản hoặc mật khẩu sai");
           this.disableButton();
         }
       } else {

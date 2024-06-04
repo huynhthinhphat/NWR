@@ -7,74 +7,14 @@
             "typeAccount": "nvienquen"
         },
         {
-            "id": "48e5",
-            "user": "nhanvien1",
-            "password": "1",
-            "typeAccount": "admin"
-        },
-        {
-            "id": "4fcf",
-            "user": "phat",
-            "password": "1",
-            "typeAccount": "admin"
-        },
-        {
-            "id": "7eee",
-            "user": "admin1123123",
-            "password": "12",
-            "typeAccount": "admin"
-        },
-        {
-            "id": "9be0",
-            "user": "nhanvien11",
-            "password": "1",
-            "typeAccount": "nvienquen"
-        },
-        {
-            "id": "a493",
-            "user": "123134132",
-            "password": "1",
-            "typeAccount": "admin"
-        },
-        {
-            "id": "a6e0",
-            "user": "1",
-            "password": "1",
-            "typeAccount": "admin"
-        },
-        {
-            "id": "b251",
-            "user": "admin1",
-            "password": "1",
-            "typeAccount": "admin"
-        },
-        {
-            "id": "c004",
-            "user": "1111",
-            "password": "111",
-            "typeAccount": "admin"
-        },
-        {
-            "id": "c595",
-            "user": "admin1111",
-            "password": "1",
-            "typeAccount": "admin"
-        },
-        {
-            "id": "cc77",
-            "user": "nhanvien11232",
+            "id": "d81a",
+            "user": "huynhthinhphat",
             "password": "1",
             "typeAccount": "admin"
         },
         {
             "id": "f6fe",
             "user": "admin",
-            "password": "1",
-            "typeAccount": "admin"
-        },
-        {
-            "id": "f6fe1",
-            "user": "adminaaaa",
             "password": "1",
             "typeAccount": "admin"
         }
